@@ -1,0 +1,7 @@
+p=int(input('principalamount:'));
+t=int(input('time periods:'));
+r=float(input('rate of interest:'));
+si=(p*t*r)/100;
+emi=(si+p)/12*t;
+print(si);
+print(emi);
