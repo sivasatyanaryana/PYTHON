@@ -1,0 +1,6 @@
+list=[1,2,3,23,43,12,77,79,]
+a=int(input())
+if a in list:
+    print('element is avaliable in list')
+else:
+        print('element is not avaliable in list')
