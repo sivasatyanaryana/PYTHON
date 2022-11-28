@@ -1,0 +1,5 @@
+bal=int(input("enter balance:"))
+amount=int(input("enter amount:"))
+mainbalance=bal+amount
+print("creidt balance=",amount)
+print("main balance=",mainbalance)
