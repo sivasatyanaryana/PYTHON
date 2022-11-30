@@ -1,0 +1,47 @@
+bdsy=200
+smpo=90
+pts=50
+sps=45
+los=80
+csno=input("enter coustomer phno:")
+csname=input("enter coustomer name:")
+csadd=input("enter coustomer address:")
+bdsyq=int(input("How many body spares you want:"))
+smpoq=int(input("How many shampoo you want:"))
+ptsq=int(input("How many paste you want:"))
+spsq=int(input("How many soaps you want:"))
+losq=int(input("How many loasans you want:"))
+coupon=input("Enter coupon code in capital letters:")
+bill=(bdsy*bdsyq)+(smpo*smpoq)+(pts*ptsq)+(sps*spsq)+(los*losq)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+if coupon=='DIWALI' and bill>=5000:
+    dis=bill*10/100
+elif coupon=='DIWALI' and bill>=3000:
+    dis=bill*6/100
+elif coupon=='DIWALI' and bill>=1000:
+    dis=bill*4/100
+elif coupon=='CHRISMAS' and bill>=3000:
+    dis=bill*20/100
+elif coupon=='CHRISMAS' and bill>=2000:
+    dis=bill*10/100
+elif coupon=='CHRISMAS' and bill>=1000:
+    dis=bill*5/100
+else:
+    dis=0
+print("bill without tax  :",bill)
+bill=bill+tax-dis
+print("coustomer phno    :",csno)
+print("coustomer name    :",csname)
+print("coustomer address :",csadd)
+print("tax               :",tax)
+print('Discount          :',dis)
+print("bill amount       :",bill)
