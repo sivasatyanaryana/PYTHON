@@ -1,0 +1,31 @@
+bdsy=200
+smpo=90
+pts=50
+sps=45
+los=80
+csno=input("enter coustomer phno:")
+csname=input("enter coustomer name:")
+csadd=input("enter coustomer address:")
+bdsyq=int(input("How many body spares you want:"))
+smpoq=int(input("How many shampoo you want:"))
+ptsq=int(input("How many paste you want:"))
+spsq=int(input("How many soaps you want:"))
+losq=int(input("How many loasans you want:"))
+bill=(bdsy*bdsyq)+(smpo*smpoq)+(pts*ptsq)+(sps*spsq)+(los*losq)
+print("bill without tax:",bill)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+bill=bill+tax
+print("coustomer phno    :",csno)
+print("coustomer name    :",csname)
+print("coustomer address :",csadd)
+print("tax               :",tax)
+print("bill amount       :",bill)
