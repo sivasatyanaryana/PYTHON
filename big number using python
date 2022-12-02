@@ -1,0 +1,35 @@
+way-1:
+
+def bignumber(a,b):
+    if a>b:
+        print("a is big")
+    else:
+        print("b is big")
+a=int(input())
+b=int(input())
+bignumber(a,b)
+
+way-2:
+
+def bignumber(a,b):
+    if a>b:
+        return "a is big"
+    else:
+        return "b is big"
+a=int(input())
+b=int(input())
+print(bignumber(a,b))
+
+way-3
+
+def bignumber(a,b):
+    if a>b:
+        return True
+    else:
+        return False
+a=int(input())
+b=int(input())
+if(bignumber(a,b)):
+    print("a is big")
+else:
+    print("b is big")
