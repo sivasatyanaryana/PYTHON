@@ -5,4 +5,4 @@ while(i<=n):
     if(n%i==0):
         factor=factor+1
     i=i+1
-print('prime number count='factor)
+print('factor count=',factor)
