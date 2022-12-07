@@ -1,0 +1,17 @@
+def isHappyNumber(n):
+    s=0
+    while(n!=0):
+        r=n%10
+        s=s+(r*r)
+        n=n//10
+    return s
+n=int(input())
+n1=n
+while n1!=1 and n1!=4:
+    n1=isHappyNumber(n1)
+
+if n1==1:
+    print("happy number")
+else:
+    print("Not happy number")
+        
