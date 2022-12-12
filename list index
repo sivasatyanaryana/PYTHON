@@ -1,0 +1,9 @@
+list=[]
+n=int(input('Enter no.of elements:'))
+for i in range(n):
+    x=int(input('enter element:'))
+    list.append(x)
+print("list=",list)
+print('Element at index 0:',list[0])
+print('Element at index 2:',list[2])
+print('Element at index 4:',list[4])
