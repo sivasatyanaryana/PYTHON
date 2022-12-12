@@ -1,0 +1,8 @@
+list=[]
+n=int(input('Enter no.of elements:'))
+for i in range(n):
+    x=int(input('enter element:'))
+    list.append(x)
+print("list=",list)
+print('maximum=',max(list))
+print('minimum=',min(list))
