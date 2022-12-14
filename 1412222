@@ -1,0 +1,7 @@
+l=[]
+n=int(input("enter how manay values:"))
+for i in range(n):
+    v=input("enter values:")
+    l.append(v)
+l=list(dict.fromkeys(l))
+print(l)
