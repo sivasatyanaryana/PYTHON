@@ -1,0 +1,13 @@
+n=int(input())
+x=[]
+x=list(map(int,input().split()))
+minimum=x[0]
+for i in range(1,n):
+        if x[i]<minimum:
+            minimium=x[i]
+print("minimum is:",minimum)
+maximum=x[0]
+for i in range(1,n):
+    if(x[i]>maximum):
+        maximum=x[i]
+print("maximum is:",maximum)
