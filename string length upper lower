@@ -1,0 +1,10 @@
+str=input("Enter any strng:")
+length=len(str)
+for i in range(0,length):
+    print(i)
+str1=input("Enter any sring in small letters:")
+print(str1.upper())
+str2=input("Enter any strng in capital letters:")
+print(str2.lower())
+str3=input("Enter any strng:")
+print(str3.swapcase()
