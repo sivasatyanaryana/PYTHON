@@ -1,5 +1,5 @@
 n=int(input())
-sqrt=n*n
+sqrt=(n**1/2)
 print(sqrt)
 if sqrt>10:
     print("Hello")
