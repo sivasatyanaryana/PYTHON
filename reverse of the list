@@ -1,0 +1,5 @@
+n=int(input())
+l=list(map(int,input().split()))
+print(l)
+new_lst=l[::-1]
+print(new_lst)
