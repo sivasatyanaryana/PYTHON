@@ -1,0 +1,9 @@
+n=int(input())
+l=list(map(int,input("Enter Numbers:").split()))
+v=len(l)//2
+a=len(l)-1
+while(v<a):
+    l[v],l[a]=l[a],l[v]
+    v+=1
+    a-=1
+print(l)
