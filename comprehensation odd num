@@ -1,0 +1,3 @@
+n=int(input("enter n velue:"))
+l=[var for var in range(1,n) if var%2 !=0]
+print("odd numbers =",l)
