@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n,r=list(map(int,input().split()))
+l=list(map(int,input().split()))
+for i in range(r):
+    la=l[n-1]
+    for j in range(n-1,0,-1):
+        l[j]=l[j-1]
+    l[0]=la
+for i in l:
+    print(i,end=' ')
