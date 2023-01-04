@@ -1,0 +1,18 @@
+n=int(input("enter matrix size"))
+m=[]
+z=[]
+a=[]
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+for i in range(0,n):
+    for j in range(0,n):
+        if i==j:
+            a.append(m[i][j])
+        elif i+j==n-1:
+            a.append(m[i][j])
+print("diagonal elements are",a,end=' ')
+print("\n maximum element",max(a))
