@@ -1,0 +1,13 @@
+n=int(input())
+m=[]
+l=list(map(int,input().split()))
+print(l)
+l.sort()
+print(l)
+k=int(input())
+m=l[k:]
+print(m)
+print('maximum value=',max(m))
+print('minimum value=',min(m))
+diff=max(m)-min(m)
+print('difference   =',diff)
