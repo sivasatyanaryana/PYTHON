@@ -1,0 +1,7 @@
+email=input("enter email")
+phno=input("enter phno")
+if email.endswith("@gmail.com"):
+    if phno.startswith("9")or phno.startswith("8")or phno.startswith("7")or phno.startswith("6") and len(phno)==10:
+        print("Registration successful")
+else:
+    print("check your details")
