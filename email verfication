@@ -1,0 +1,7 @@
+email=input()
+if email.endswith("siva@gmail.com"):
+    print("your are using google account")
+elif email.endswith("siva@yahoo.com"):
+    print("your are using yahoo account")
+elif email.endswith("siva@adc.aditya.ac.in"):
+    print("your are using aditya educationalinstitute account")
