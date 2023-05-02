@@ -1,0 +1,17 @@
+l=list(map(int,input().split()))
+d={}
+for i in l:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]=d[i]+1
+m=list(d.values())
+x=max(m)
+y=min(m)
+for i in d:
+    if d[i]==x:
+        print(i)
+for j in d:
+    if d[j]==y:
+        print(j)
+        print(i-j)
