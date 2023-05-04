@@ -1,0 +1,25 @@
+class Leap:
+    def leapyear(self,n):
+        if (n%4==0 and n%100!=0):
+            print(n,"Leap Year")
+        elif(n%400==0):
+            print(n,"Leap Year")
+        else:
+            print(n,"Not Leap Year")
+n=int(input())
+a=Leap()
+a.leapyear(n)
+
+
+class Leap:
+    def leapyear(self,n):
+        if (n%4==0 and n%100!=0) or (n%400==0):
+            return True
+        else:
+            return False
+n=int(input())
+a=Leap()
+if a.leapyear(n):
+    print(n,"Leap Year")
+else:
+    print(n,"NOt Leap Year")
