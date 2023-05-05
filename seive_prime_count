@@ -14,4 +14,4 @@ for i in range(2,n):
     if seive[i]==1:
         c=c+1
         print(i,c)
-print("prime number are:",c)
+print("count of prime number are:",c)
